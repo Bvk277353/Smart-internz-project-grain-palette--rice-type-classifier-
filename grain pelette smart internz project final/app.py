@@ -32,4 +32,4 @@ def predict():
     return render_template("result.html", label=label, confidence=confidence, suggestion=suggestion, image_path=filepath)
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(debug=False)
