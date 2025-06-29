@@ -1,4 +1,4 @@
-Flask
+flask
+tensorflow-cpu==2.15.0
 numpy
-tensorflow
 Pillow
