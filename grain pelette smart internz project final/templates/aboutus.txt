@@ -1,0 +1,9 @@
+SNO    		NAMES				DEPT		ROLL NO				MOBILE
+	
+1.	 Bezawada Geetha Madhuri 		ece 		23485A0402  			9392541190
+
+2.       bandela Sailaja kumari 		cse 		23481A5417			7981156349
+
+3.       B Bindu 				ece 		23481a0425 			7842393659
+   
+4.       Doupati Bala Vardhan Kumar		aiml 		22481A4230			7013354887

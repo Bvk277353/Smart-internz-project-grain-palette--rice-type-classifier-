@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Rice Classifier</title>
+    <link rel="stylesheet" href="/static/styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <header class="banner">
+        <div class="banner-content">
+            <h1>Rice Classification Made Easy</h1>
+            <p>Upload an image to identify your rice type!</p>
+            </div>
+    </header>
+
+    <main class="container">
+        <h1>Grain Palette</h1>
+        <form method="POST" action="/predict" enctype="multipart/form-data">
+            <label for="image-upload" class="file-upload-label">
+                Choose Rice Image
+                <input type="file" id="image-upload" name="image" accept="image/*" capture="environment" required>
+            </label>
+            <button type="submit">Classify Rice</button>
+        </form>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-content">
+            <p>&copy; Smart Internz Team ID LTVIP2025TMID34308, All rights reserved. | Designed by Geetha & Team</p>
+            <ul class="footer-links">
+                <li><a href="aboutus.txt">About Us</a></li>
+                <li><a href="">Contact</a></li>
+                <li><a href="getstarted.txt">Get Started</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>

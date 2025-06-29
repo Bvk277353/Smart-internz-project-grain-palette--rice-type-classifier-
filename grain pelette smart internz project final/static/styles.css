@@ -1,0 +1,259 @@
+/* General Body & Reset */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #eef1f6; /* Light, calming background */
+    color: #333;
+    line-height: 1.6;
+    display: flex; /* Flexbox for full page layout */
+    flex-direction: column; /* Stack header, main, footer vertically */
+    min-height: 100vh; /* Ensure footer sticks to bottom */
+}
+
+/* Container for Main Content */
+.container {
+    max-width: 900px;
+    margin: 40px auto; /* More vertical space */
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Softer, deeper shadow */
+    text-align: center; /* Center content within container */
+    flex-grow: 1; /* Allow main content to grow and push footer down */
+}
+
+/* Headings */
+h1 {
+    color: #2c3e50; /* Darker, professional blue */
+    font-size: 2.8em; /* Larger main heading */
+    margin-bottom: 25px;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.05); /* Subtle text shadow */
+}
+
+h2 {
+    color: #34495e; /* Slightly lighter blue */
+    font-size: 2em;
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
+h3 {
+    color: #515e6a; /* Even lighter blue */
+    font-size: 1.5em;
+    margin-bottom: 15px;
+}
+
+p {
+    font-size: 1.1em;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+/* Banner Section */
+.banner {
+    background-image: url(banner.jpg); /* Placeholder: REPLACE THIS URL with your actual banner image path */
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    padding: 80px 20px; /* More vertical padding */
+    position: relative; /* Needed for overlay */
+    overflow: hidden; /* Hide overflow from any overlay effects */
+}
+
+.banner::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4); /* Darker overlay for better text contrast */
+    z-index: 0; /* Behind content */
+}
+
+.banner-content {
+    position: relative;
+    z-index: 1; /* Ensure text is above overlay */
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.banner h1 {
+    font-size: 3.5em; /* Larger banner title */
+    margin-bottom: 15px;
+    color: #ffffff; /* Ensure white text on banner */
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3); /* Stronger text shadow for visibility */
+}
+
+.banner p {
+    font-size: 1.5em; /* Larger banner subtitle */
+    opacity: 0.9;
+    color: #ffffff; /* Ensure white text on banner */
+    margin-bottom: 30px;
+}
+
+/* Form Elements (Index Page) */
+.file-upload-label {
+    display: inline-block;
+    background-color: #28a745; /* Green for "Choose File" */
+    color: #fff;
+    padding: 12px 25px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.1em;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-bottom: 20px; /* Space before button */
+}
+
+.file-upload-label:hover {
+    background-color: #218838;
+    transform: translateY(-2px);
+}
+
+#image-upload {
+    display: none; /* Hide the default file input */
+}
+
+button[type="submit"] {
+    background-color: #007bff; /* Blue for "Classify" */
+    color: white;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.1em;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+/* Image Display (Result Page) */
+.result-image {
+    max-width: 100%; /* Ensure image scales down */
+    height: auto; /* Maintain aspect ratio */
+    max-height: 300px; /* Limit height for large images */
+    border: 5px solid #ddd; /* Light border */
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* Nicer shadow */
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* Try Another Button (Result Page) */
+.back-button {
+    display: inline-block;
+    background-color: #6c757d; /* Gray for "Try Another" */
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-top: 25px; /* Space from content above */
+}
+
+.back-button:hover {
+    background-color: #5a6268;
+    transform: translateY(-2px);
+}
+
+
+/* Footer Styles */
+.site-footer {
+    background-color: #080808; /* Dark blue matching headings */
+    color: #ffffff; /* Light gray text */
+    padding: 30px 20px;
+    text-align: center;
+    margin-top: 50px; /* Space between main content and footer */
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin-top: 15px;
+}
+
+.footer-links li {
+    display: inline-block; /* Use inline-block for spacing */
+    margin: 0 15px;
+}
+
+.footer-links a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 0.95em;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #3498db; /* Highlight on hover */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .container {
+        margin: 20px auto;
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 2.2em;
+    }
+
+    .banner {
+        padding: 60px 15px;
+    }
+
+    .banner h1 {
+        font-size: 2.5em;
+    }
+
+    .banner p {
+        font-size: 1.2em;
+    }
+
+    .footer-links li {
+        display: block; /* Stack links vertically on small screens */
+        margin: 8px 0;
+    }
+
+    .file-upload-label,
+    button[type="submit"] {
+        width: 100%; /* Full width buttons on small screens */
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.8em;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    .banner h1 {
+        font-size: 2em;
+    }
+
+    .banner p {
+        font-size: 1em;
+    }
+
+    .container {
+        padding: 15px;
+    }
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Prediction Result</title>
+    <link rel="stylesheet" href="/static/styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <header class="banner">
+        <div class="banner-content">
+            <h1>Your Rice Classification Result</h1>
+            <p>See the predicted type and confidence.</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <h1>Prediction Result</h1>
+        <img src="/{{ image_path }}" alt="Uploaded Rice Image" class="result-image"><br>
+        <h2>Type: {{ label }}</h2>
+        <h3>Confidence: {{ confidence }}%</h3>
+        <p><strong>Suggestion:</strong> {{ suggestion }}</p>
+        <a href="/" class="back-button">Try Another Classification</a>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-content">
+             <p>&copy; Smart Internz Team ID LTVIP2025TMID34308, All rights reserved. | Designed by Geetha & Team</p>
+            <ul class="footer-links">
+                <li><a href="aboutus.txt">About Us</a></li>
+                <li><a href="">Contact</a></li>
+                <li><a href="getstarted.txt">Get Started</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>

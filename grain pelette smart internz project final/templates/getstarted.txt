@@ -1,0 +1,48 @@
+Choose an Image:
+
+Click on the "Choose Rice Image" button.
+
+A file explorer/finder window will pop up. Navigate to the location on your computer where you have a rice image saved.
+
+Select the image file and click "Open" (or similar, depending on your operating system).
+
+
+
+Classify the Rice:
+
+After selecting the image, click the "Classify Rice" button.
+
+The app will send your image to the server for processing.
+
+
+
+
+View the Results:
+
+The page will reload, and you will be directed to the "Prediction Result" page.
+
+On this page, you will see:
+
+The image you uploaded.
+
+The predicted "Type" of rice (e.g., Basmati, Jasmine).
+
+The "Confidence" percentage of the prediction.
+
+A "Suggestion" related to the rice type.
+
+
+
+
+
+
+
+Try Another Classification:
+
+To classify another rice image, click the "Try Another Classification" button at the bottom of the results page. This will take you back to the main upload page.
+
+That's it! These are the simple steps for an end-user to interact with your Rice Classifier web application.
+
+
+
+
