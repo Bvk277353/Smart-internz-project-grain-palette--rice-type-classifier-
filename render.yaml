@@ -1,0 +1,6 @@
+services:
+  - type: web
+    name: grainpalette-app
+    env: docker
+    plan: free
+    autoDeploy: true
